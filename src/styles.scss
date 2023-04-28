@@ -6,7 +6,6 @@ html, body {
 
 body { 
     margin: 0; 
-    padding: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
@@ -14,4 +13,25 @@ body {
     display: flex;
     align-items: center;
     height: calc(100vh - 250px) !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black;
+
+    &:not(:first-child) {
+        padding-left: 15px;
+    }
+}
+
+td {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+tr td {
+    border-bottom: 1pt solid #C1C1C1;
 }
