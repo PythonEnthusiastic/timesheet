@@ -9,8 +9,24 @@
             <button mat-mini-fab color="primary" (click)="addEmployee()" [disabled]="employeeNameFC.invalid">
                 <mat-icon>add</mat-icon>
             </button>
-
-            <div>{{employees | json}}</div>
+        </mat-card>
+        <mat-card class="hours">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th *ngFor="let day of weekdays">{{day}}</th>
+                    <th>Total Hours</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees; let i = index">
+                        <td>{{employee.name}}</td>
+                        <td *ngFor="let day of weekdays">
+                            <input type="number" [id]="day" [(ngModel)]="employee[day]" class="hours-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </mat-card>
     </div>
 </div>
