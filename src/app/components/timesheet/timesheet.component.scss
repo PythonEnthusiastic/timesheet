@@ -25,7 +25,32 @@ mat-form-field {
 }
 
 .hours-input {
-    max-width: 75px;
+    max-width: 50px;
     margin-left: 15px;
     text-align: center;
+}
+
+.total-cell {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black;
+
+    &:not(:first-child) {
+        padding-left: 15px;
+    }
+}
+
+td {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+tr td {
+    border-bottom: 1pt solid #C1C1C1;
 }

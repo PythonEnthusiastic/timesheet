@@ -24,6 +24,12 @@
                         <td *ngFor="let day of weekdays">
                             <input type="number" [id]="day" [(ngModel)]="employee[day]" class="hours-input">
                         </td>
+                        <td class="total-cell">{{getTotalHours(employee)}}</td>
+                        <td>
+                            <button mat-icon-button (click)="deleteEmployee(i)">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

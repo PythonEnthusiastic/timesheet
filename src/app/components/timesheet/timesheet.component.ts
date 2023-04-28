@@ -63,4 +63,13 @@ export class TimesheetComponent {
       return error;
     }
   }
+
+  getTotalHours(employee: Employee): number {
+    return employee.monday + employee.tuesday + employee.wednesday +
+      employee.thursday + employee.friday + employee.saturday + employee.sunday;
+  }
+
+  deleteEmployee(index: number): void {
+    this.employees.splice(index, 1)
+  }
 }
