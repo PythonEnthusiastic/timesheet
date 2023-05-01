@@ -2,13 +2,13 @@
     <mat-card>
         <mat-tab-group mat-align-tabs="center">
             <mat-tab label="Customer Success">
-                <app-analytics-table></app-analytics-table>
+                <app-analytics-table [departmentId]="'1'"></app-analytics-table>
             </mat-tab>
             <mat-tab label="Sales">
-                <app-analytics-table></app-analytics-table>
+                <app-analytics-table [departmentId]="'2'"></app-analytics-table>
             </mat-tab>
             <mat-tab label="Finance">
-                <app-analytics-table></app-analytics-table>
+                <app-analytics-table departmentId="3"></app-analytics-table>
             </mat-tab>
         </mat-tab-group>
     </mat-card>
