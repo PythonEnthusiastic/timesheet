@@ -1,6 +1,4 @@
 export interface Employee {
-    [key: string]: string | undefined | number;
-
     id?: string;
     departmentId: string | undefined;
     name: string;
